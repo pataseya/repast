@@ -11,10 +11,11 @@
 
   <body>
     <div>
+      <div class="navbar"
+        <%= link_to "Home", root_path %>
 
-
-    <%= link_to "Home", root_path %>
-    <%= yield %>
+      </div>
+      <%= yield %>
     </div>
   </body>
 </html>
