@@ -1,0 +1,23 @@
+<h1>Welcome to RePast</h1>
+
+<h2>Here are some of our recipes</h2>
+
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Owner</th>
+      <th>Category</th>
+      <th>Serves</th>
+      <th>Instructions</th>
+    </tr>
+    <% @recipes.each do |recipe| %>
+    <tr>
+      <td><%= recipe.name %></td>
+      <td><%= recipe.owner %></td>
+      <td><%= recipe.category %></td>
+      <td><%= recipe.serves%></td>
+      <td><%= recipe.contents %></td>
+    </tr>
+</table>
+<% end %>
